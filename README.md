@@ -1,4 +1,3 @@
-Winexe 1.1 Installation
 <b>Winexe 1.1 Installation - Ubuntu 12.04-14.04-16.04</b>
 <ul>
  <li>
