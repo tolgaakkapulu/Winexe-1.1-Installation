@@ -5,25 +5,32 @@
  <li>
 sudo apt-get -y install gcc-mingw-w64 comerr-dev libpopt-dev libbsd-dev zlib1g-dev libc6-dev python-dev libacl1-dev libldap2-dev git</li>
   <li>
-tar zxvf samba-4.1.23.tar.gz
+git clone "https://github.com/tolgaakkapulu/Winexe-1.1-Installation"
+  </li>
+ <li>
+cd Winexe-1.1-Installation
+  </li>
+  <li> 
+tar xzf samba-4.1.23.tar.gz
   </li>
   <li>
-tar zxvf winexe-winexe-waf.tar.gz
+tar xzf winexe-winexe-waf.tar.gz
   </li>
   <li>
-cd winexe-winexe-waf/source
+cd winexe-winexe-waf/source/
   </li>
   <li>
-vi wscript_build
-  
-        -        stlib='smb_static bsd z resolv rt',
-        -        lib='dl'
-        +        stlib='smb_static z rt',
-        +        lib='dl resolv bsd'</li>
-<li>
+sed -i "s/stlib='smb_static bsd z resolv rt'/stlib='smb_static z rt'/g" wscript_build
+  </li>
+  <li>
+sed -i "s/lib='dl'/lib='dl resolv bsd'/g" wscript_build
+  <li>
+chmod +x waf 
+   </li>
+  <li>
 ./waf --samba-dir=../../samba-4.1.23 configure build
   </li>
   <li>
-sudo cp build/winexe-static /usr/local/bin/winexe
+cp build/winexe-static /usr/local/bin/winexe
   </li>
   </ul>
