@@ -7,14 +7,6 @@ echo -e "\e[1;34msudo apt-get -y install gcc-mingw-w64 comerr-dev libpopt-dev li
 sleep 1
 sudo apt-get -y install gcc-mingw-w64 comerr-dev libpopt-dev libbsd-dev zlib1g-dev libc6-dev python-dev libacl1-dev libldap2-dev git
 
-echo -e "\e[1;34mgit clone "https://github.com/tolgaakkapulu/Winexe-1.1-Installation"\e[0m"
-sleep 1
-git clone "https://github.com/tolgaakkapulu/Winexe-1.1-Installation"
-
-echo -e "\e[1;34mcd Winexe-1.1-Installation\e[0m"
-sleep 1
-cd Winexe-1.1-Installation
-
 echo -e "\e[1;34mtar xzf samba-4.1.23.tar.gz\e[0m"
 sleep 1
 tar xzf samba-4.1.23.tar.gz
