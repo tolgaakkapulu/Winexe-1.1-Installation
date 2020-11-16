@@ -34,3 +34,15 @@ chmod +x waf
 cp build/winexe-static /usr/local/bin/winexe
   </li>
   </ul>
+<br><br>or<br><br>
+<ul>
+  <li>
+git clone "https://github.com/tolgaakkapulu/Winexe-1.1-Installation"
+  </li>
+ <li>
+cd Winexe-1.1-Installation
+</li>
+ <li>
+  bash winexe_1.1_installation.sh 
+</li>
+</ul>
