@@ -34,7 +34,7 @@ chmod +x waf
 cp build/winexe-static /usr/local/bin/winexe
   </li>
   </ul>
-<br><br>or<br><br>
+<b>or</b>
 <ul>
   <li>
 git clone "https://github.com/tolgaakkapulu/Winexe-1.1-Installation"
